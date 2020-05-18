@@ -8,10 +8,10 @@ import java.util.concurrent.ExecutionException;
 
 public class HypixelAlarm {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        HypixelAPI api = new HypixelAPI(UUID.fromString("bb6aee6e-eb56-40c0-9812-25cddce1ab86"));
+        HypixelAPI api = new HypixelAPI(UUID.fromString("api key here"));
         // IN THE VARIABLE BELOW, PUT THE UUID OF THE PERSON WHOSE STATUS YOU WOULD LIKE TO TRACK.
         // YOU CAN GET THE UUID BY GOING TO NAMEMC.COM AND TYPING THEIR NAME IN THE SEARCH BAR.
-        String uuid = "b151a056-7820-44a7-a64f-94c114652e22";
+        String uuid = "uuid here";
         int lastLogin = api.getPlayerByUuid(uuid).get().getPlayer().get("lastLogin").getAsInt();
         int lastLogout = api.getPlayerByUuid(uuid).get().getPlayer().get("lastLogout").getAsInt();
         while (true){

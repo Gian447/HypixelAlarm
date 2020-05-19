@@ -8,12 +8,12 @@ import java.util.concurrent.ExecutionException;
 
 public class HypixelAlarm {
     public static void main(String[] args) throws ExecutionException, InterruptedException, JavaLayerException, FileNotFoundException {
-        HypixelAPI api = new HypixelAPI(UUID.fromString("bb6aee6e-eb56-40c0-9812-25cddce1ab86"));
+        HypixelAPI api = new HypixelAPI(UUID.fromString("hehe"));
         // IN THE VARIABLE BELOW, PUT THE UUID OF THE PERSON WHOSE STATUS YOU WOULD LIKE TO TRACK.
         // YOU CAN GET THE UUID BY GOING TO NAMEMC.COM AND TYPING THEIR NAME IN THE SEARCH BAR.
+        String uuid = "hehe";
         Alarm a = new Alarm("speech.mp3");
         int c = 1;
-        String uuid = "b151a056-7820-44a7-a64f-94c114652e22";
         int lastLogin;
         int lastLogout;
         while (true){
